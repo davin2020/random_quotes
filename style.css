@@ -28,7 +28,13 @@ body {
 h1 {
 	text-align: center;
 	font-size: 2.8rem;
+	line-height: 2.5rem;
 	color: rebeccapurple;
+}
+@media screen and (max-width: 600px) {
+	h1 {
+		font-size: 2.2rem;
+	}
 }
 
 h2 {
@@ -47,6 +53,7 @@ button {
 	font-size: 1.4rem;
 	font-weight: 600;
 	background-color: #f2f28c;
+	border-radius: 	20px;
 }
 
 /* using courgette for now, but need better font */
@@ -64,12 +71,24 @@ button {
 }*/
 .quote {
 	font-size: 3rem;
-	font-style: italic;
 	line-height: 3.6rem;
+	font-style: italic;
 	margin: 0 20px 0 10px;
 	/*overflowing atm, coudl try hidden optino or add MQ! */
 }
-
+/*when width is UNDER 550 ie max=under, and min=over */
+@media screen and (max-width: 800px) {
+	.quote {
+		font-size: 2rem;
+		line-height: 2.6rem;
+	}
+}
+@media screen and (max-width: 500px) {
+	.quote {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+}
 .courgette {
 	font-family: 'Courgette';
 	font-size: 3.5rem;
@@ -101,7 +120,11 @@ div {
 	padding: 10px;
 	height: 500px;
 }
-
+@media screen and (max-width: 700px) {
+	.container {
+		margin: 0px;
+	}
+}
 .main {
 	text-align: center;
 	/*margin: auto 0;*/
@@ -118,6 +141,12 @@ div {
 	align-items: center;
 	/*// to center child img in pic_container*/
 	justify-content: center;
+	border-radius: 	20px;
+}
+@media screen and (max-width: 700px) {
+	.child {
+		width: 45%;
+	}
 }
 
 .footer {
@@ -143,6 +172,12 @@ div {
     object-fit: contain;
     padding: 10px;
 }
+@media screen and (max-width: 700px) {
+	.picture {
+		width: 100%;
+	}
+}
+
 .rotate180 {
 	transform: rotate(90deg);
 }
