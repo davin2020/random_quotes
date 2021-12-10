@@ -1,4 +1,3 @@
-
 let rainbowQuotes = [
 	"Your existence is revolutionary.",
 	"You absolutely are trans enough.",
@@ -31,28 +30,25 @@ let rainbowQuotes = [
 	"Transness is a form of evolution - Vixx Thompson"
 	];
 
-	//  longer quote options - 
-	// "We are powerfull because we have survived, and that is what it is all about, survival and growth - Audre Lorde",
-	// "Its not my appearance that defines me, but my heart and soul"
-	// "There's nothing wrong with you. There's a lot wrong with teh world you live in.",
-	// "Enjoy  now, but know that you will get there",
-
-
-// store images locally for quicker refresh!
+// stored images locally for quicker refresh!
 let rainbowImages = [
-	"https://www.goodfreephotos.com/albums/vector-images/pastel-unicorn-vector-clipart.png",
-	"https://www.goodfreephotos.com/svgfiles/final401-rainbow-unicorn.svg",
-	"https://www.goodfreephotos.com/albums/vector-images/multi-layered-rainbow-heart-vector-clipart.png",
+	"images/pastel-unicorn-vector-clipart.png",
+	"images/final401-rainbow-unicorn.svg",
 	"images/cartoon-unicorn-is-holding-a-placard-on-a-stars-background-121917929.jpg",
-	"images/meritt-thomas-KTYjVDmN4A4-unsplash.jpg"
+	"images/meritt-thomas-KTYjVDmN4A4-unsplash.jpg",
+	"images/1538347218.svg",
+	"images/1539641676.svg",
+	"images/Dinky.svg",
+	"images/Glow.svg",
+	"images/Gold-Unicorn-Silhouette-2-Circles-2.svg",
+	"images/Prismatic-Winged-Unicorn.svg",
+	"images/unicorn-blue.svg",
+	"images/unicorn-remix.svg",
+	"images/Prismatic-Magical-Unicorn-Hearts-6-No-Background.svg",
+	"images/Unicorn-Silhouette-6.svg",
+	"images/Colorful-Rainbow-Horse.svg"
 	];
-// add more images eg
-// MORE UNICORN IMGS
-// https://www.redbubble.com/shop/?query=rainbow%20unicorn&ref=search_box
-// eg unicorn shape w rainbow color bkg, unicorn kitty/caticorn, unicorn dubbing , unicorn on dino to the disco, unicorn believe in yourself , unicorn pegaus
-// santa on unnicorn ,black is my happy color, unicorn always be u sticker
-// github rainbow unicorn , unicorn stay legendary sticker
-
+// "images/multi-layered-rainbow-heart-vector-clipart.png",
 
 function chooseRandomItem(arrayItems) {
 	let chosenItem = arrayItems[Math.floor(Math.random()*arrayItems.length)];
@@ -62,7 +58,7 @@ function chooseRandomItem(arrayItems) {
 
 let newRandomQuote = document.getElementById("getQuote");
 newRandomQuote.addEventListener("click", function() {
-	console.log('CLICKED');
+	// console.log('CLICKED');
   	// chooseRandomItem(rainbowQuotes);
   	getRandomQuote();
   	// any benefit to adding all the code here?
@@ -70,7 +66,7 @@ newRandomQuote.addEventListener("click", function() {
 
 //this is the main function called by index page
 function getRandomQuote() {
-	console.log('called main function ie getRandomQuote');
+	// console.log('called main function ie getRandomQuote');
 	let selectedQuote = chooseRandomItem(rainbowQuotes);
 	updateElementWithContent("userQuote", selectedQuote);
 	let selectedImage = chooseRandomItem(rainbowImages);
@@ -79,8 +75,8 @@ function getRandomQuote() {
 }
 
 function updateElementWithContent(element, content) {
-	console.log('displayUserItem element: ' + element);
-	console.log('displayUserItem content: ' + content);
+	// console.log('displayUserItem element: ' + element);
+	// console.log('displayUserItem content: ' + content);
 	document.getElementById(element).innerHTML = content;
 }
 
