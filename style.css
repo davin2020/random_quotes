@@ -1,0 +1,122 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: verdanna, 'Arial', sans-serif;
+	font-size: 1.2rem;
+	line-height: 1.4rem;
+	color: #f3f370;
+}
+
+.background{
+    background-image:url(images/katie-rainbow-CBbXtCwBFjw-unsplash.jpg);
+    opacity:0.8;
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    background-repeat: no-repeat;
+    /*contain is other option, instead of cover*/
+    background-size: cover;
+    z-index:-1;
+}
+
+h1 {
+	text-align: center;
+	font-size: 2.8rem;
+	color: rebeccapurple;
+}
+
+h2 {
+	text-align: center;
+	/*font-weight: 600;*/
+	font-size: 2.2rem;
+}
+
+p {
+	text-align: center;
+}
+
+button {
+	padding: 20px 60px;
+	margin: 10px;
+	font-size: 1.4rem;
+}
+
+.quote {
+	font-size: 3rem;
+	font-style: italic;
+	line-height: 3.6rem;
+	margin: 0 10px;
+	/*overflowing atm, coudl try hidden optino or add MQ! */
+}
+
+.courgette {
+	font-family: 'Courgette';
+	font-size: 3.5rem;
+}
+
+.merienda {
+	font-family: 'Merienda One';
+}
+
+.oleo {
+	font-family: 'Oleo Script';
+	font-size: 3.5rem;
+	letter-spacing: 
+}
+
+div {
+	/*border: 1px dashed green;*/
+}
+
+/* need to center containner within body!*/
+.container {
+	width: auto;
+	margin: 10px;
+	display: flex;
+	position: relative;
+	justify-content: center;
+	/*border: 1px dashed red;*/
+	text-align: center;
+	padding: 10px;
+}
+
+.main {
+	text-align: center;
+	/*margin: auto 0;*/
+}
+
+.child {
+	/*need both of these to center child div! */
+	width: 40%;
+	/*height: 400px;*/
+	margin: 0 auto;
+	/*border: 1px dashed white;*/
+	background-color: rebeccapurple;
+}
+
+.footer {
+	text-align: center;
+	font-size: 1rem;
+	color: rebeccapurple;
+}
+
+.pic_container {
+	display: flex;
+  	justify-content: center;
+  	padding: 10px 0;
+  	height: 400px;
+}
+
+/*image is overflowing its parent*/
+.picture {
+	width: 100%;
+    /*makes it fit within its parent while keeping proportions*/
+    object-fit: contain;
+    padding: 10px;
+}
