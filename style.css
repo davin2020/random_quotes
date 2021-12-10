@@ -20,7 +20,7 @@ body {
     right:0;
     left:0;
     background-repeat: no-repeat;
-    /*contain is other option, instead of cover*/
+    /* 'contain' is other option, instead of cover*/
     background-size: cover;
     z-index:-1;
 }
@@ -45,13 +45,28 @@ button {
 	padding: 20px 60px;
 	margin: 10px;
 	font-size: 1.4rem;
+	font-weight: 600;
+	background-color: #f2f28c;
 }
 
+/* using courgette for now, but need better font */
+/*.quote:before {
+	content: "\" ";
+	color: white;
+	font-family: 'Oleo Script';
+	font-family: 'Courgette';
+}*/
+/*.quote:after {
+	content: " \"";
+	color: white;
+	font-family: 'Oleo Script';
+	font-family: 'Courgette';
+}*/
 .quote {
 	font-size: 3rem;
 	font-style: italic;
 	line-height: 3.6rem;
-	margin: 0 10px;
+	margin: 0 20px 0 10px;
 	/*overflowing atm, coudl try hidden optino or add MQ! */
 }
 
@@ -84,6 +99,7 @@ div {
 	/*border: 1px dashed red;*/
 	text-align: center;
 	padding: 10px;
+	height: 500px;
 }
 
 .main {
@@ -98,12 +114,17 @@ div {
 	margin: 0 auto;
 	/*border: 1px dashed white;*/
 	background-color: rebeccapurple;
+	display: flex;
+	align-items: center;
+	/*// to center child img in pic_container*/
+	justify-content: center;
 }
 
 .footer {
 	text-align: center;
 	font-size: 1rem;
 	color: rebeccapurple;
+	margin-top: 20px;
 }
 
 .pic_container {
@@ -111,12 +132,18 @@ div {
   	justify-content: center;
   	padding: 10px 0;
   	height: 400px;
+  	align-items: center;
 }
 
 /*image is overflowing its parent*/
 .picture {
-	width: 100%;
+	width: 300px;
+	/*width: 100%;*/
     /*makes it fit within its parent while keeping proportions*/
     object-fit: contain;
     padding: 10px;
 }
+.rotate180 {
+	transform: rotate(90deg);
+}
+
