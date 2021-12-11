@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="style.css">
+
   <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
 
 	<!-- <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet"> -->
@@ -12,6 +13,31 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Merienda+One&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+
+
+	<!-- snowing effect css -->
+  	<!-- <link rel="stylesheet" href="snow2.css"> -->
+
+	<link id="snow_theme" rel="stylesheet" type="text/css" href="" />
+
+	<script>
+        function toggleTheme() {
+            // Obtains an array of all <link>
+            // elements.
+            // Select your element using indexing.
+            // var theme = document.getElementsByTagName('link')[0];
+            var theme = document.getElementById('snow_theme');
+  
+            // Change the value of href attribute 
+            // to change the css sheet.
+            if (theme.getAttribute('href') == 'snow.css') {
+                theme.setAttribute('href', '');
+            } else {
+                theme.setAttribute('href', 'snow.css');
+            }
+        }
+    </script>
+
   <title>Rainbow Unicorn Quotes</title>
 </head>
 
@@ -38,6 +64,7 @@
 
 		<div class="button_container">
 			<button name="getQuote" id="getQuote">Get Quote</button>
+			<button onclick="toggleTheme()">Let it Snow!</button>
 		</div>
   	</div>
 
@@ -51,6 +78,59 @@
   <div class="footer">
     Created by <a href="https://davin2020.github.io/">Davin</a>
   </div>
+
+
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
 
 </body>
 </html>
