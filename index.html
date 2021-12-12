@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="style.css">
+  	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
+  	<!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
 
 	<!-- <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet"> -->
 
@@ -14,22 +13,15 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Merienda+One&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
 
-
+	<!-- normal style sheet -->
+	<link rel="stylesheet" href="style.css">
 	<!-- snowing effect css -->
-  	<!-- <link rel="stylesheet" href="snow2.css"> -->
-
 	<link id="snow_theme" rel="stylesheet" type="text/css" href="" />
 
 	<script>
-        function toggleTheme() {
-            // Obtains an array of all <link>
-            // elements.
-            // Select your element using indexing.
-            // var theme = document.getElementsByTagName('link')[0];
+        function toggleSnow() {
             var theme = document.getElementById('snow_theme');
-  
-            // Change the value of href attribute 
-            // to change the css sheet.
+            // Change the value of href attribute to change the css sheet to the snowing effect
             if (theme.getAttribute('href') == 'snow.css') {
                 theme.setAttribute('href', '');
             } else {
@@ -64,12 +56,18 @@
 
 		<div class="button_container">
 			<button name="getQuote" id="getQuote">Get Quote</button>
-			<button onclick="toggleTheme()">Let it Snow!</button>
+			<!-- <button onclick="toggleSnow()">Let it Snow!</button> -->
+			<div class="button_container_snow">
+				<label for="snow_toggle">
+				<input class="toggle" type="checkbox" id="snow_toggle" onclick="toggleSnow()">
+				Let it Snow!</label> 
+			</div>
 		</div>
+
   	</div>
 
   	<script type="text/javascript" src="script.js"></script>
-<!--   	<script>
+	<!--   	<script>
   	window.onload = function exampleFunction() {
             console.log('The Script will load now.');
         }
