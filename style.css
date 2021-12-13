@@ -2,6 +2,7 @@
 	box-sizing: border-box;
 }
 
+/*colors yellow text f3f370 */
 body {
 	padding: 0;
 	margin: 0;
@@ -20,15 +21,23 @@ body {
     right:0;
     left:0;
     background-repeat: no-repeat;
-    /*contain is other option, instead of cover*/
+    /* 'contain' is other option, instead of cover*/
     background-size: cover;
     z-index:-1;
+    /*background-color: black;*/
 }
 
+/*colors yellow text f3f370 - change h1 text if snow option is on */
 h1 {
 	text-align: center;
 	font-size: 2.8rem;
+	line-height: 2.5rem;
 	color: rebeccapurple;
+}
+@media screen and (max-width: 600px) {
+	h1 {
+		font-size: 2.2rem;
+	}
 }
 
 h2 {
@@ -45,14 +54,81 @@ button {
 	padding: 20px 60px;
 	margin: 10px;
 	font-size: 1.4rem;
+	font-weight: 600;
+	background-color: #f2f28c;
+	border-radius: 	20px;
 }
+
+.button_container {
+	width: auto;
+	margin: 10px;
+	display: flex;
+	position: relative;
+	/*justify-content: center;*/
+	/*border: 1px dashed red;*/
+	text-align: center;
+	padding: 10px;
+	/*flex-basis: sp*/
+	justify-content: space-evenly;
+
+}
+.button_container_snow {
+	/*width: 300px;*/
+	border: 2px solid black;
+	padding: 20px;
+	margin: 10px;
+	font-size: 1.4rem;
+	font-weight: 600;
+	background-color: white;
+	border-radius: 	20px;
+	color: black;
+}
+
+@media screen and (max-width: 500px) {
+	button {
+		padding: 10px 20px;
+	}
+	.button_container_snow {
+		padding: 10px;
+	}
+}
+
+/* yellow light f2f28c */
+
+/* using courgette for now, but need better font */
+/*.quote:before {
+	content: "\" ";
+	color: white;
+	font-family: 'Oleo Script';
+	font-family: 'Courgette';
+}*/
+/*.quote:after {
+	content: " \"";
+	color: white;
+	font-family: 'Oleo Script';
+	font-family: 'Courgette';
+}*/
 
 .quote {
 	font-size: 3rem;
-	font-style: italic;
 	line-height: 3.6rem;
-	margin: 0 10px;
+	font-style: italic;
+	margin: 0 20px 0 10px;
 	/*overflowing atm, coudl try hidden optino or add MQ! */
+}
+
+/*when width is UNDER 550 ie max=under, and min=over */
+@media screen and (max-width: 800px) {
+	.quote {
+		font-size: 2rem;
+		line-height: 2.6rem;
+	}
+}
+@media screen and (max-width: 500px) {
+	.quote {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
 }
 
 .courgette {
@@ -84,8 +160,13 @@ div {
 	/*border: 1px dashed red;*/
 	text-align: center;
 	padding: 10px;
+	height: 500px;
 }
-
+@media screen and (max-width: 700px) {
+	.container {
+		margin: 0px;
+	}
+}
 .main {
 	text-align: center;
 	/*margin: auto 0;*/
@@ -98,12 +179,23 @@ div {
 	margin: 0 auto;
 	/*border: 1px dashed white;*/
 	background-color: rebeccapurple;
+	display: flex;
+	align-items: center;
+	/*// to center child img in pic_container*/
+	justify-content: center;
+	border-radius: 	20px;
+}
+@media screen and (max-width: 700px) {
+	.child {
+		width: 45%;
+	}
 }
 
 .footer {
 	text-align: center;
 	font-size: 1rem;
 	color: rebeccapurple;
+	margin-top: 20px;
 }
 
 .pic_container {
@@ -111,12 +203,82 @@ div {
   	justify-content: center;
   	padding: 10px 0;
   	height: 400px;
+  	align-items: center;
 }
 
 /*image is overflowing its parent*/
 .picture {
-	width: 100%;
+	width: 300px;
+	/*width: 100%;*/
     /*makes it fit within its parent while keeping proportions*/
     object-fit: contain;
     padding: 10px;
+}
+@media screen and (max-width: 700px) {
+	.picture {
+		width: 100%;
+	}
+}
+
+.rotate180 {
+	transform: rotate(90deg);
+}
+
+
+/* Toggle Switch for Snowoing Effect - TODO find where I got code from & credit */
+.toggle {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 62px;
+  height: 32px;
+  display: inline-block;
+  position: relative;
+  border-radius: 50px;
+  overflow: hidden;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #707070;
+  transition: background-color ease 0.3s;
+  /*margin: 0 auto;*/
+  /*to align text vertically w label must wrap chekcbox in label tags! */
+  display: inline-block;
+  vertical-align: middle;
+  bottom: 1px;
+}
+
+.toggle:before {
+  content: "on off";
+  display: block;
+  position: absolute;
+  z-index: 2;
+  width: 28px;
+  height: 28px;
+  background: #fff;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  font: 10px/28px Helvetica;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-indent: -22px;
+  word-spacing: 37px;
+  color: #fff;
+  text-shadow: -1px -1px rgba(0,0,0,0.15);
+  white-space: nowrap;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
+}
+
+/* green #4CD964 */
+.toggle:checked {
+  background-color: rebeccapurple;
+}
+
+.toggle:checked:before {
+  left: 32px;
+}
+label {
+	display: block;
 }
