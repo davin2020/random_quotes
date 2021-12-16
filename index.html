@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="style.css">
-  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
+  	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  	<!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
 
 	<!-- <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet"> -->
 
@@ -12,6 +12,24 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Merienda+One&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+
+	<!-- normal style sheet -->
+	<link rel="stylesheet" href="style.css">
+	<!-- snowing effect css -->
+	<link id="snow_theme" rel="stylesheet" type="text/css" href="" />
+
+	<script>
+        function toggleSnow() {
+            var theme = document.getElementById('snow_theme');
+            // Change the value of href attribute to change the css sheet to the snowing effect
+            if (theme.getAttribute('href') == 'snow.css') {
+                theme.setAttribute('href', '');
+            } else {
+                theme.setAttribute('href', 'snow.css');
+            }
+        }
+    </script>
+
   <title>Rainbow Unicorn Quotes</title>
 </head>
 
@@ -54,20 +72,27 @@
 
 		<div class="button_container">
 			<button name="getQuote" id="getQuote">Get Quote</button>
-			
-			<!-- other frames to try 
-			<img src="pictures\Picture-Frame-310118.svg" id="userImage" class="picture">wide slightlly fancy
-			<img src="pictures\Picture-Frame-Arvin61r58.svg" id="userImage" class="picture"> v thin
-			-->
 
+			<!-- <button onclick="toggleSnow()">Let it Snow!</button> -->
+			<div class="button_container_snow">
+				<label for="snow_toggle">
+				<input class="toggle" type="checkbox" id="snow_toggle" onclick="toggleSnow()">
+				Let it Snow!</label> 
+        
+        <!-- other frames to try 
+			  <img src="pictures\Picture-Frame-310118.svg" id="userImage" class="picture">wide slightlly fancy
+			  <img src="pictures\Picture-Frame-Arvin61r58.svg" id="userImage" class="picture"> v thin
+			  -->
+        
+			</div>
 		</div>
-		
+
   	</div>
 
   	<script type="text/javascript" src="script.js"></script>
 	<!--   	
-	<script>
-  		window.onload = function exampleFunction() {
+    <script>
+  	window.onload = function exampleFunction() {
             console.log('The Script will load now.');
         }
     </script> -->
@@ -75,6 +100,59 @@
   <div class="footer">
     Created by <a href="https://davin2020.github.io/">Davin</a>
   </div>
+
+
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
+<div class="snowflake"></div>
 
 </body>
 </html>
