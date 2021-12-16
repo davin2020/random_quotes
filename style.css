@@ -107,6 +107,7 @@ div {
 	/*margin: auto 0;*/
 }
 
+/* is this still needed? */
 .child {
 	/*need both of these to center child div! */
 	width: 40%;
@@ -114,9 +115,21 @@ div {
 	margin: 0 auto;
 	/*border: 1px dashed white;*/
 	background-color: rebeccapurple;
+	border-radius: 20px;
 	display: flex;
 	align-items: center;
 	/*// to center child img in pic_container*/
+	justify-content: center;
+	/*background-image: url(pictures/Frame159.svg);*/
+	/*<img src="pictures\Frame159.svg" class="picture">*/
+}
+
+.child2 {
+	/* cant restrict text too much */
+	/*width: 40%;*/
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
 	justify-content: center;
 }
 
@@ -147,3 +160,26 @@ div {
 	transform: rotate(90deg);
 }
 
+/* example https://codepen.io/dudleystorey/pen/yyZpeX */
+
+/* When four positions are specified, they create slices measured from the top, right, bottom, and left in that order (clockwise). 
+Re-check this after combinging w MQ branch
+*/
+.myframe2 {
+  border-image: url(pictures/OrnatePictureFramePlain.svg) 390 340 387 342 stretch stretch; 
+  border-color: #f4be52;
+  /*inset outset ridge solid */
+  border-style: outset;
+  border-width: 50px;
+  display: block;
+  /* need this to constrain as its now a partent of child2 div */
+  width: 40%;
+  height: auto;
+  background-color: rebeccapurple;
+  margin: 0 auto;
+}
+
+/* CLASSES IM USING COS THEY WORK 
+child2 myframe2
+spent 2hrs trying to put a sliced-frame around an image, only to realise it wasnt working cos the image had extra whitespare around it!
+*/

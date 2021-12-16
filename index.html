@@ -18,32 +18,56 @@
 <body onload="getRandomQuote()">
 
 <div class="background"></div>
+
 	<h1>Rainbow Unicorn Quotes</h1>
 	<div class="main">
-		
+		<!-- first svg has heaps of white space around it, hence cant slice it properly! -->
+		<!-- 
+		<img src="pictures\Frame159.svg" class="picture">
+		<img src="pictures\OrnatePictureFramePlain.svg" class="picture"> 
+		-->
+
 		<div class="container">
-			
-			<div class="child">
-			  	<!-- <h2>Quote</h2> -->
-			  	<p id="userQuote" class="quote merienda"></p>
+
+			<div class="myframe2">
+				<div class="child2">
+					
+					<div>
+					  	<!-- <h2>Quote</h2> -->
+					  	<p id="userQuote" class="quote merienda"></p>
+				  	</div>
+				</div>
 			</div>
 
-			<div class="child">
-			  	<!-- <h2>Image</h2> -->
-			  	<div class="pic_container">
-			  		<img id="userImage" class="picture">
-			  	</div>
+			<!-- ISSSUE how to nest these classess so its responsive to screen width and frame only changes size based on that, not on size of inner picture?? - there are no MQ in this branch !
+			 -->
+			<div class="myframe2">
+				<div class="child2">
+				  	<!-- <h2>Image</h2> -->
+				  	<div class="pic_container">
+				  		<img id="userImage" class="picture">
+				  	</div>
+				</div>
 			</div>
+
 		</div>
 
 		<div class="button_container">
 			<button name="getQuote" id="getQuote">Get Quote</button>
+			
+			<!-- other frames to try 
+			<img src="pictures\Picture-Frame-310118.svg" id="userImage" class="picture">wide slightlly fancy
+			<img src="pictures\Picture-Frame-Arvin61r58.svg" id="userImage" class="picture"> v thin
+			-->
+
 		</div>
+		
   	</div>
 
   	<script type="text/javascript" src="script.js"></script>
-<!--   	<script>
-  	window.onload = function exampleFunction() {
+	<!--   	
+	<script>
+  		window.onload = function exampleFunction() {
             console.log('The Script will load now.');
         }
     </script> -->
