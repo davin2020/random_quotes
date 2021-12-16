@@ -110,24 +110,38 @@ button {
 }*/
 
 .quote {
-	font-size: 3rem;
-	line-height: 3.6rem;
+	/*original size 3rem with line height 3.6 rem*/
+	font-size: 2.6rem;
+	line-height: 3.2rem;
 	font-style: italic;
-	margin: 0 20px 0 10px;
+	/*margin: 0 20px 0 10px;*/
+	/* need to shift text to left as its italic so appears closer to right edge of parent */
+	margin: 0 6px 0 4px;
 	/*overflowing atm, coudl try hidden optino or add MQ! */
 }
 
 /*when width is UNDER 550 ie max=under, and min=over */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
+	.quote {
+		font-size: 2.4rem;
+		line-height: 2.8rem;
+	}
+}
+@media screen and (max-width: 850px) {
 	.quote {
 		font-size: 2rem;
-		line-height: 2.6rem;
+		line-height: 2.4rem;
 	}
 }
 @media screen and (max-width: 500px) {
 	.quote {
 		font-size: 1.5rem;
 		line-height: 2rem;
+	}
+}
+@media screen and (max-width: 400px) {
+	.quote {
+		font-size: 1.2rem;
 	}
 }
 
@@ -164,7 +178,8 @@ div {
 }
 @media screen and (max-width: 700px) {
 	.container {
-		margin: 0px;
+		margin: 0;
+		padding: 0;
 	}
 }
 .main {
@@ -202,6 +217,10 @@ div {
 	.child {
 		width: 45%;
 	}
+	/*.myframe2 {
+		width: 45%;
+		border-width: 30px;
+	}*/
 }
 
 .footer {
@@ -221,8 +240,8 @@ div {
 
 /*image is overflowing its parent*/
 .picture {
-	width: 300px;
-	/*width: 100%;*/
+	/*width: 300px;*/
+	width: 100%;
     /*makes it fit within its parent while keeping proportions*/
     object-fit: contain;
     padding: 10px;
@@ -230,6 +249,7 @@ div {
 @media screen and (max-width: 700px) {
 	.picture {
 		width: 100%;
+		padding: 0;
 	}
 }
 
@@ -244,7 +264,7 @@ div {
 Re-check this after combinging w MQ branch
 */
 .myframe2 {
-  border-image: url(pictures/OrnatePictureFramePlain.svg) 390 340 387 342 stretch stretch; 
+  border-image: url(images/OrnatePictureFramePlain.svg) 390 340 387 342 stretch stretch; 
   border-color: #f4be52;
   /*inset outset ridge solid */
   border-style: outset;
@@ -255,6 +275,16 @@ Re-check this after combinging w MQ branch
   height: auto;
   background-color: rebeccapurple;
   margin: 0 auto;
+  /* need this here as its paretn of child2 in order to verically center quote*/
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+	.myframe2 {
+		width: 45%;
+		border-width: 30px;
+	}
 }
 
 /* CLASSES IM USING COS THEY WORK 
