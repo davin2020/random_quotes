@@ -35,7 +35,7 @@ let rainbowImages = [
 	"images/pastel-unicorn-vector-clipart.png",
 	"images/final401-rainbow-unicorn.svg",
 	"images/cartoon-unicorn-is-holding-a-placard-on-a-stars-background-121917929.jpg",
-	"images/meritt-thomas-KTYjVDmN4A4-unsplash-cropped.jpg",
+	"images/meritt-thomas-KTYjVDmN4A4-unsplash_cropped.jpg",
 	"images/1538347218.svg",
 	"images/1539641676.svg",
 	"images/Dinky.svg",
