@@ -10,9 +10,15 @@ body {
 	font-size: 1.2rem;
 	line-height: 1.4rem;
 	color: #f3f370;
+	/*background-image:url(images/katie-rainbow-CBbXtCwBFjw-unsplash.jpg);*/
+	/*background-image:url(images/Transgender_Pride_flag.svg);*/
+	background-image:url(images/craig_background.svg);
+	/*opacity:0.8;*/
+	background-size: contain;
+	background-repeat: repeat;
 }
 
-.background{
+/*.background{
     background-image:url(images/katie-rainbow-CBbXtCwBFjw-unsplash.jpg);
     opacity:0.8;
     position: fixed;
@@ -21,11 +27,10 @@ body {
     right:0;
     left:0;
     background-repeat: no-repeat;
-    /* 'contain' is other option, instead of cover*/
-    background-size: cover;
-    z-index:-1;
-    /*background-color: black;*/
-}
+    /* 'contain' is other good-ish option, instead of cover*/
+    /*background-size: cover;
+    z-index:-1;*/
+/*}*/
 
 /*colors yellow text f3f370 - change h1 text if snow option is on */
 h1 {
@@ -228,6 +233,7 @@ div {
 	font-size: 1rem;
 	color: rebeccapurple;
 	margin-top: 20px;
+	margin-bottom: 10px;
 }
 
 .pic_container {
