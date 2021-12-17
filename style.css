@@ -42,6 +42,13 @@ h1 {
 @media screen and (max-width: 600px) {
 	h1 {
 		font-size: 2.2rem;
+		margin: 10px 0;
+	}
+}
+@media screen and (max-width: 450px) {
+	h1 {
+		font-size: 1.8rem;
+		margin: 10px 0;
 	}
 }
 
@@ -91,10 +98,20 @@ button {
 
 @media screen and (max-width: 500px) {
 	button {
-		padding: 10px 20px;
+		padding: 10px;
+		font-size: 1rem;
 	}
 	.button_container_snow {
 		padding: 10px;
+		font-size: 1rem;
+	}
+}
+@media screen and (max-width: 400px) {
+	button {
+		padding: 5px 10px;
+	}
+	.button_container_snow {
+		padding: 5px;
 	}
 }
 
@@ -138,10 +155,11 @@ button {
 		line-height: 2.4rem;
 	}
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
 	.quote {
 		font-size: 1.5rem;
 		line-height: 2rem;
+		margin: 0;
 	}
 }
 @media screen and (max-width: 400px) {
@@ -179,7 +197,7 @@ div {
 	/*border: 1px dashed red;*/
 	text-align: center;
 	padding: 10px;
-	height: 500px;
+	/*height: 500px;*/
 }
 @media screen and (max-width: 700px) {
 	.container {
@@ -216,6 +234,7 @@ div {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	height: 400px;
 }
 
 @media screen and (max-width: 700px) {
@@ -227,6 +246,16 @@ div {
 		border-width: 30px;
 	}*/
 }
+@media screen and (max-width: 550px) {
+	.child2 {
+		height: 350px;
+	}
+}
+@media screen and (max-width: 550px) {
+	.child2 {
+		height: 300px;
+	}
+}
 
 .footer {
 	text-align: center;
@@ -235,12 +264,17 @@ div {
 	margin-top: 20px;
 	margin-bottom: 10px;
 }
-
+@media screen and (max-width: 450px) {
+	.footer {
+		font-size: 0.8rem;
+		margin-top: 10px;
+	}
+}
 .pic_container {
 	display: flex;
   	justify-content: center;
   	padding: 10px 0;
-  	height: 400px;
+  	/*height: 400px;*/
   	align-items: center;
 }
 
