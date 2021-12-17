@@ -5,7 +5,7 @@ html, body {
   width: 100vw;
   height: 100vh;
   position: relative;
-  overflow: hidden;
+  overflow: scroll;
   background: linear-gradient(#123, #0a0d31);
   /* originanl linear-gradient(#123, #111)  - #1b3854, #0a0d31*/
 }
