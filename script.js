@@ -1,33 +1,8 @@
 let rainbowQuotes = [
-	"Your existence is revolutionary",
-	"You absolutely are trans enough",
-	"You are already fabulous!",
-	"Always be yourself, unless you can be a unicorn!",
-	"You are worthy",
-	"Your experience matters",
-	"It's never too late to be yourself",
-	"I didn't realise who I was until I stopped being who I wasn't",
-	"Small progress is still progress",
-	"Be yourself, everyone else is already taken - Oscar Wilde",
-	"Your experience is valid",
-	"Keep going, keep trying, keep being you",
-	"I am fundamentally ok!",
-	"It takes Courages to grow up and become who you really are - E E Cummings",
-	"Be proud of who you are, right here, right now",
-	"Yes, I am in the right bathroom",
-	"Your lives matter; your voices matter; your stories matter; you matter!",
-	"Black trans lives matter",
-	"I am proud to be me",
-	"Courage is being yourself every day, in a world that tells you to be someone else",
-	"The only choice I made was to be myself",
-	"I am brave, I am bruised. I am who I'm meant to be, This is me! - from The Greatest Showman film",
-	"Today you are You, that is truer than true. There is no one alive who is Youer than You - Dr Seuss",
-	"The world is a better place because you exist",
-	"We are powerful because we have survived - Audre Lorde",
-	"You got this!",
-	"Life isn't binary",
-	"Its not my appearance that defines me, but my heart and soul",
-	"Transness is a form of evolution - Vixx Thompson"
+	"DeLorean Ipsum",
+	"Save the clock tower, save the clock tower.",
+	"Marty, one rejection isn't the end of the world.",
+	"Think, McFly, think. I gotta have time to recopy it"
 	];
 
 // stored images locally for quicker refresh!
