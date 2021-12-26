@@ -12,10 +12,11 @@ body {
 	color: #f3f370;
 	/*background-image:url(images/katie-rainbow-CBbXtCwBFjw-unsplash.jpg);*/
 	/*background-image:url(images/Transgender_Pride_flag.svg);*/
-	background-image:url(images/craig_background.svg);
+	/*background-image:url(images/craig_background.svg);*/
 	/*opacity:0.8;*/
 	background-size: contain;
 	background-repeat: repeat;
+	background-color: #7ca8f4;
 }
 
 /*.background{
