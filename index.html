@@ -6,8 +6,6 @@
 
   	<!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
 
-	<!-- <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet"> -->
-
 	<!-- All the Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,38 +28,26 @@
         }
     </script>
 
-  <title>Random Quotes</title>
+  <title>Random Quotes Template</title>
 </head>
 
 <body onload="getRandomQuote()">
 
 <div class="background"></div>
 
-	<h1>Random Quotes</h1>
+	<h1>Random Quotes Template</h1>
 	<div class="main">
-		<!-- first svg has heaps of white space around it, hence cant slice it properly! -->
-		<!-- 
-		<img src="pictures\Frame159.svg" class="picture">
-		<img src="pictures\OrnatePictureFramePlain.svg" class="picture"> 
-		-->
 
 		<div class="container">
 
-			<div class="myframe2">
-				<div class="child2">
-					
-					<!-- <div> -->
-					  	<!-- <h2>Quote</h2> -->
+			<div class="frame">
+				<div class="frame_inner">
 					  	<p id="userQuote" class="quote merienda"></p>
-				  	<!-- </div> -->
 				</div>
 			</div>
 
-			<!-- ISSSUE how to nest these classess so its responsive to screen width and frame only changes size based on that, not on size of inner picture?? - there are no MQ in this branch !
-			 -->
-			<div class="myframe2">
-				<div class="child2">
-				  	<!-- <h2>Image</h2> -->
+			<div class="frame">
+				<div class="frame_inner">
 				  	<div class="pic_container">
 				  		<img id="userImage" class="picture">
 				  	</div>
@@ -76,13 +62,11 @@
 			<!-- <button onclick="toggleSnow()">Let it Snow!</button> -->
 			<div class="button_container_snow">
 				<label for="snow_toggle">
-				<input class="toggle" type="checkbox" id="snow_toggle" onclick="toggleSnow()">
+					<input class="toggle" type="checkbox" id="snow_toggle" onclick="toggleSnow()">
 				Let&nbspit&nbspSnow!</label> 
         
         <!-- other frames to try 
-			  <img src="pictures\Picture-Frame-310118.svg" id="userImage" class="picture">wide slightlly fancy
-			  <img src="pictures\Picture-Frame-Arvin61r58.svg" id="userImage" class="picture"> v thin
-			  -->
+			  <img src="pictures\Picture-Frame-Arvin61r58.svg" id="userImage" class="picture"> -->
         
 			</div>
 		</div>
@@ -98,10 +82,10 @@
     </script> -->
   
   <div class="footer">
-    Created by <a href="https://davin2020.github.io/">Davin</a>
+    Template Created by <a href="https://davin2020.github.io/">Davin</a>
   </div>
 
-
+<!-- Need 50 snowflakes for the Snowing Effect stylesheet -->
 <div class="snowflake"></div>
 <div class="snowflake"></div>
 <div class="snowflake"></div>

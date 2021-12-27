@@ -1,29 +1,24 @@
-let rainbowQuotes = [
+// Customise this by adding in your own quotes
+let randomQuotes = [
 	"DeLorean Ipsum",
-	"Save the clock tower, save the clock tower.",
-	"Marty, one rejection isn't the end of the world.",
-	"Think, McFly, think. I gotta have time to recopy it"
+	"Roads? Where we’re going, we don’t need roads",
+	"Great Scott!",
+	"Wait a minute, Doc. Are you telling me you built a time machine...out of a DeLorean?",
+	"1.21 Gigawatts!?!",
+	"88 miles per hour!",
+	"If you put your mind to it, you can accomplish anything.",
+	"Doc, you’re my only hope.",
+	"I’m from the future."
 	];
 
-// stored images locally for quicker refresh!
-let rainbowImages = [
-	"images/pastel-unicorn-vector-clipart.png",
-	"images/final401-rainbow-unicorn.svg",
-	"images/cartoon-unicorn-is-holding-a-placard-on-a-stars-background-121917929_cropped.jpg",
-	"images/meritt-thomas-KTYjVDmN4A4-unsplash_cropped.jpg",
-	"images/1538347218.svg",
-	"images/1539641676.svg",
-	"images/Dinky.svg",
-	"images/Glow.svg",
-	"images/Gold-Unicorn-Silhouette-2-Circles-2.svg",
-	"images/Prismatic-Winged-Unicorn.svg",
-	"images/unicorn-blue.svg",
-	"images/unicorn-remix.svg",
-	"images/Prismatic-Magical-Unicorn-Hearts-6-No-Background.svg",
-	"images/Unicorn-Silhouette-6.svg",
-	"images/Colorful-Rainbow-Horse.svg"
+// store images locally for quicker refresh
+// Customise this by adding in your own royalty free images
+let randomImages = [
+	"images/jason-leung-pSLIG2E_gaw-unsplash.jpg",
+	"images/sebastiano-piazzi-dSYk9mTxFzU-unsplash.jpg",
+	"images/delorean-rental-jLWR4eYzXbw-unsplash.jpg",
+	"images/sebastiano-piazzi-Wbekvae_0P4-unsplash.jpg"
 	];
-// "images/multi-layered-rainbow-heart-vector-clipart.png",
 
 function chooseRandomItem(arrayItems) {
 	let chosenItem = arrayItems[Math.floor(Math.random()*arrayItems.length)];
@@ -34,7 +29,7 @@ function chooseRandomItem(arrayItems) {
 let newRandomQuote = document.getElementById("getQuote");
 newRandomQuote.addEventListener("click", function() {
 	// console.log('CLICKED');
-  	// chooseRandomItem(rainbowQuotes);
+  	// chooseRandomItem(randomQuotes);
   	getRandomQuote();
   	// any benefit to adding all the code here?
 });
@@ -42,9 +37,9 @@ newRandomQuote.addEventListener("click", function() {
 //this is the main function called by index page
 function getRandomQuote() {
 	// console.log('called main function ie getRandomQuote');
-	let selectedQuote = chooseRandomItem(rainbowQuotes);
+	let selectedQuote = chooseRandomItem(randomQuotes);
 	updateElementWithContent("userQuote", selectedQuote);
-	let selectedImage = chooseRandomItem(rainbowImages);
+	let selectedImage = chooseRandomItem(randomImages);
 	// console.log('selectedImage: ' + selectedImage);
 	updateElementWithImage("userImage", selectedImage);
 }

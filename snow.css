@@ -1,4 +1,4 @@
-/* credit for snowing animation - https://codepen.io/alvaromontoro/pen/GRNmdzB */
+/* This CSS gives a snowing effect */
 html, body {
   padding: 0;
   margin: 0;
@@ -14,9 +14,6 @@ html, body {
 
 /*colors yellow text f3f370 - change h1 text if snow option is on */
 h1 {
-/*  text-align: center;
-  font-size: 2.8rem;
-  line-height: 2.5rem;*/
   color: #f3f370;
 }
 
@@ -27,10 +24,13 @@ h1 {
 a:visited {
   color: #C1D1E5;
 }
+
 .button_container_snow {
-  background-color: #FBEBF1;
+  background-color: #9bbbf2;
 }
 
+/* Credit for snowing animation - https://codepen.io/alvaromontoro/pen/GRNmdzB */
+/* FYI The index.html file needs 50 divs with a class of 'snowflake' in order for this snowing effect to work */
 .snowflake {
   --size: 1vw;
   width: var(--size);
@@ -49,6 +49,7 @@ a:visited {
     transform: translate3d(var(--left-end), 110vh, 0);
   }
 }
+
 .snowflake:nth-child(1) {
   --size: 0.2vw;
   --left-ini: 3vw;
@@ -503,55 +504,3 @@ a:visited {
 .snowflake:nth-child(6n) {
   filter: blur(1px);
 }
-
-/***/
-/*#youtube {
-  z-index: 2;
-  display: block;
-  width: 100px;
-  height: 70px;
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  background: red;
-  border-radius: 50%/11%;
-  transition: transform 0.5s;
-}
-
-#youtube:hover,
-#youtube:focus {
-  transform: scale(1.1);
-}
-
-#youtube::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 7.5%;
-  left: -6%;
-  width: 112%;
-  height: 85%;
-  background: red;
-  border-radius: 9%/50%;
-}
-
-#youtube::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 20px;
-  left: 40px;
-  width: 45px;
-  height: 30px;
-  border: 15px solid transparent;
-  box-sizing: border-box;
-  border-left: 30px solid white;
-}
-
-#youtube span {
-  font-size: 0;
-  position: absolute;
-  width: 0;
-  height: 0;
-  overflow: hidden;
-}*/

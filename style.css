@@ -10,28 +10,11 @@ body {
 	font-size: 1.2rem;
 	line-height: 1.4rem;
 	color: #f3f370;
-	/*background-image:url(images/katie-rainbow-CBbXtCwBFjw-unsplash.jpg);*/
-	/*background-image:url(images/Transgender_Pride_flag.svg);*/
-	/*background-image:url(images/craig_background.svg);*/
-	/*opacity:0.8;*/
 	background-size: contain;
 	background-repeat: repeat;
-	background-color: #7ca8f4;
+	background-color: #9bbbf2;
+	/* other blues, darker 7ca8f4 lighter 9bbbf2*/
 }
-
-/*.background{
-    background-image:url(images/katie-rainbow-CBbXtCwBFjw-unsplash.jpg);
-    opacity:0.8;
-    position: fixed;
-    top:0;
-    bottom:0;
-    right:0;
-    left:0;
-    background-repeat: no-repeat;
-    /* 'contain' is other good-ish option, instead of cover*/
-    /*background-size: cover;
-    z-index:-1;*/
-/*}*/
 
 /*colors yellow text f3f370 - change h1 text if snow option is on */
 h1 {
@@ -118,20 +101,6 @@ button {
 
 /* yellow light f2f28c */
 
-/* using courgette for now, but need better font */
-/*.quote:before {
-	content: "\" ";
-	color: white;
-	font-family: 'Oleo Script';
-	font-family: 'Courgette';
-}*/
-/*.quote:after {
-	content: " \"";
-	color: white;
-	font-family: 'Oleo Script';
-	font-family: 'Courgette';
-}*/
-
 .quote {
 	/*original size 3rem with line height 3.6 rem*/
 	font-size: 2.6rem;
@@ -147,18 +116,18 @@ button {
 @media screen and (max-width: 1000px) {
 	.quote {
 		font-size: 2.4rem;
-		line-height: 2.8rem;
+		line-height: 3rem;
 	}
 }
 @media screen and (max-width: 850px) {
 	.quote {
 		font-size: 2rem;
-		line-height: 2.4rem;
+		line-height: 2.5rem;
 	}
 }
 @media screen and (max-width: 550px) {
 	.quote {
-		font-size: 1.5rem;
+		font-size: 1.4rem;
 		line-height: 2rem;
 		margin: 0;
 	}
@@ -206,29 +175,12 @@ div {
 		padding: 0;
 	}
 }
+
 .main {
 	text-align: center;
-	/*margin: auto 0;*/
 }
 
-/* is this still needed? */
-.child {
-	/*need both of these to center child div! */
-	width: 40%;
-	/*height: 400px;*/
-	margin: 0 auto;
-	/*border: 1px dashed white;*/
-	background-color: rebeccapurple;
-	border-radius: 20px;
-	display: flex;
-	align-items: center;
-	/*// to center child img in pic_container*/
-	justify-content: center;
-	/*background-image: url(pictures/Frame159.svg);*/
-	/*<img src="pictures\Frame159.svg" class="picture">*/
-}
-
-.child2 {
+.frame_inner {
 	/* cant restrict text too much */
 	/*width: 40%;*/
 	margin: 0 auto;
@@ -242,18 +194,14 @@ div {
 	.child {
 		width: 45%;
 	}
-	/*.myframe2 {
-		width: 45%;
-		border-width: 30px;
-	}*/
 }
 @media screen and (max-width: 550px) {
-	.child2 {
+	.frame_inner {
 		height: 350px;
 	}
 }
 @media screen and (max-width: 550px) {
-	.child2 {
+	.frame_inner {
 		height: 300px;
 	}
 }
@@ -279,11 +227,9 @@ div {
   	align-items: center;
 }
 
-/*image is overflowing its parent*/
 .picture {
-	/*width: 300px;*/
 	width: 100%;
-    /*makes it fit within its parent while keeping proportions*/
+    /*keyword Contain makes it fit within its parent while keeping proportions*/
     object-fit: contain;
     padding: 10px;
     max-height: 450px;
@@ -305,33 +251,32 @@ div {
 /* When four positions are specified, they create slices measured from the top, right, bottom, and left in that order (clockwise). 
 Re-check this after combinging w MQ branch
 */
-.myframe2 {
+.frame {
   border-image: url(images/OrnatePictureFramePlain.svg) 390 340 387 342 stretch stretch; 
   border-color: #f4be52;
   /*inset outset ridge solid */
   border-style: outset;
   border-width: 50px;
   display: block;
-  /* need this to constrain as its now a partent of child2 div */
+  /* need this to constrain as its now a partent of frame_inner div */
   width: 40%;
   height: auto;
   background-color: rebeccapurple;
   margin: 0 auto;
-  /* need this here as its paretn of child2 in order to verically center quote*/
+  /* need this here as its paretn of frame_inner in order to verically center quote*/
   display: flex;
   justify-content: center;
 }
 
 @media screen and (max-width: 700px) {
-	.myframe2 {
+	.frame {
 		width: 45%;
 		border-width: 30px;
 	}
 }
 
 /* CLASSES IM USING COS THEY WORK 
-child2 myframe2
-spent 2hrs trying to put a sliced-frame around an image, only to realise it wasnt working cos the image had extra whitespare around it!
+frame_inner frame
 */
 
 
@@ -389,7 +334,7 @@ spent 2hrs trying to put a sliced-frame around an image, only to realise it wasn
 .toggle:checked:before {
   left: 32px;
 }
+
 label {
 	display: block;
 }
-
