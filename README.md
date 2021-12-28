@@ -1,19 +1,19 @@
-# random_quotes
-## DeLorean themed Template for a Random Quote Generator
+# DeLorean themed Template for a Random Quote Generator
 This is a GitHub Template that you can reuse and customise, to create your own Random Quote Generator.
+
 As I made it pre-Christmas, it also has a snowing effect toggle button
 
-##Live Demo
+## Live Demo
 [Live Demo hosted on GH Pages](https://davin2020.github.io/random_quotes)
 
 ![Screenshot of DeLorean themed Random Quotes Template](/images/screenshot_random_quotes.png)
 
-##Install
+## Install
 1. Click the green Use This Template button above, and give your repo a name 
 2. Clone the new repo locally & cd to the new directory
 3. Open the index.htmml file in your browser
 
-##Customise
+## Customise
 You can customise this template in the following ways
 
 - Add your own text/quotes to the `randomQuotes` array in the `script.js` file
