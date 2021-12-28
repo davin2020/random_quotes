@@ -13,17 +13,16 @@ As I made it pre-Christmas, it also has a snowing effect toggle button
 2. Clone the new repo locally & cd to the new directory
 3. Open the index.htmml file in your browser
 
-
 ##Customise
 You can customise this template in the following ways
 
-- Add your own text/quotes
+- Add your own text/quotes to the `randomQuotes` array in the `script.js` file
 
-- Add your own images
+- Add your own images to the `randomImages` array in the `script.js` file, and also add them to the `/images` directory
 
-- Add your own font
+- Add your own font in `style.css` (you may wish to adjust the font-size and/or line-height if you change the font)
 
-- Add your own picture-frame SVG image
+- Add your own picture-frame SVG image, in the `frame` class in `style.css` (you may wish to adjust the slice options depending on your svg)
 
 - Adjust the background colours 
 
